@@ -10,6 +10,14 @@ body
 a
   +link
 
+  // This is a class for links to in-page anchors
+  // to avoid problems with the sticky navbar
+  &.anchor
+    display: block
+    position: relative
+    top: -$header-height
+    visibility: hidden
+
 [type=email], [type=text], textarea
   +fill-parent
   border-radius: $base-border-radius

@@ -6,10 +6,9 @@
   background-position: center center
 
   &:after
-    background: rgba(52,73,94,0.5)
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(52,73,94,0.5)),color-stop(1,rgba($dark-blue,0.5)))
-    background-image: -moz-linear-gradient(top,rgba(52,73,94,0.5) 0,rgba($dark-blue,0.5) 100%)
-    background-image: -o-linear-gradient(top,rgba(52,73,94,0.5) 0,rgba($dark-blue,0.5) 100%)
+    $base: $light-blue
+    background: rgba($base,0.4)
+    @include background-image(linear-gradient(top,rgba($base,0.2) 0,rgba($base,0.7) 60%, rgba($base,0.9) 100%))
     background-repeat: repeat-x
     position: absolute
     top: 0
@@ -34,7 +33,7 @@
   .welcome
     padding: 4em 0 8em
     text-align: center
-    color: #fff
+    color: white
 
     h1
       font-weight: 400
