@@ -1,9 +1,7 @@
 %section#clients_section.main-section.constrained
   .container
     %header
-      %h2 Clients
-
-    %p Durante nuestra andadura hemos tenido el placer de trabajar codo a codo con las siguientes empresas impulsando sus proyectos.
+      %h2 What people like you think about our work
 
     #testimonials.testimonials
       - data.testimonials.each do |testimonial|
@@ -17,5 +15,7 @@
 
       .pagination
         - data.testimonials.length.times do |i|
-          .dot{data: {idx: i}}
+          / .dot{data: {idx: i}}
 
+    .action
+      = link_to 'Check out our work', '/work'

@@ -10,13 +10,14 @@
     width: 7em
     height: $header-height
     background: url(/images/logo-white.png) no-repeat center center
-    +prefixer(background-size, contain, webkit moz ms)
+    +prefixer(background-size, contain, webkit moz ms spec)
     float: left
     vertical-align: middle
     display: block
   ul
     margin: 0
     float: right
+    text-transform: uppercase
     li
       display: inline-block
       line-height: $header-height
@@ -39,7 +40,7 @@
     position: fixed
     z-index: 100
     width: 100%
-    background: rgba($dark-blue, .9)
+    background: rgba($color-3, .9)
 
     &+*
       padding-top: $header-height

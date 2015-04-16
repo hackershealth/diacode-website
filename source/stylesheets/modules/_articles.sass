@@ -5,6 +5,11 @@ body.blog
   #main_content
     padding-bottom: 3em
     font-size: 24px
+
+    p
+      line-height: 33px
+      font-size: 22px
+      letter-spacing: 0.15px
     
     .container
       max-width: -webkit-calc(800px - (40px * 2))
@@ -58,13 +63,16 @@ body.blog
           font-size: 0.8em
 
     .pagination
+      margin: 2em 0
+      a
+        +ghost-button($color-2, #fff, .8em)
       .prev
         float: left
       .next
         float: right
 
 
-  article.blog-post
+  #main_content article.blog-post
     header
       margin: 4em 0
 
@@ -83,18 +91,24 @@ body.blog
         margin-bottom: 20px
         line-height: 1.75
 
+      h1, h2, h3, h4, h5, h6
+        margin-top: 40px
+
       p
         margin-top: 0
         margin-bottom: 30px
         line-height: 1.75
 
       code
-        background-color: #f8f8f8
-        padding: 1px 5px
+        background-color: $color-1
         font-size: 18px
+        padding: 1px 5px
 
       code.hljs
-        font-size: 16px
+        padding: 14px
+        border-radius: 1px
+        font-size: 13px
+        line-height: 20px
 
       img
         max-width: 100%
@@ -109,6 +123,7 @@ body.blog
       padding: 2em
       font-size: 0.9em
       line-height: 1.5
+
 
       &:after
         display: block
@@ -126,6 +141,11 @@ body.blog
         width: 85%
         padding-left: 1em
         box-sizing: border-box
+
+        p
+          margin: 0 auto 1em auto
+          font-size: 20px
+          line-height: 28px
 
         .links
           margin: 0
