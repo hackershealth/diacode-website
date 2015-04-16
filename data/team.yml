@@ -21,7 +21,7 @@ team_members:
 
   ricardo:
     full_name: Ricardo García Vega
-    position: Soul surfer developer
+    position: Soul Surfer Developer
     email_address: ricardo@diacode.com
     location: 'Salinas, Asturias, Spain'
     bio: |
@@ -31,7 +31,7 @@ team_members:
 
   bruno:
     full_name: Bruno Bayón
-    position: Developer
+    position: Chief Hipster Developer
     email_address: bruno@diacode.com
     location: 'Vitoria, Spain'
     bio: |
@@ -41,7 +41,7 @@ team_members:
 
   artur:
     full_name: Artur Chruszcz
-    position: Developer
+    position: Yogi Developer
     email_address: artur@diacode.com
     location: 'Barcelona, Spain'
     bio: |
